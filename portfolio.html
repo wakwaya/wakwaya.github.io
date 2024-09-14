@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My GitHub Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .projects, .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project, .skill {
+            flex: 1 1 45%;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media(max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .project, .skill {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My GitHub Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Wakwaya Saketa, a passionate developer with a strong interest in creating impactful software solutions. I specialize in web development, open source contributions, and building user-friendly applications. Welcome to my portfolio!</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1: <a href="https://github.com/yourusername/project1" target="_blank">Project Title</a></h3>
+                <p>Description: A brief description of the project, its goals, and technologies used.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: <a href="https://github.com/yourusername/project2" target="_blank">Project Title</a></h3>
+                <p>Description: A brief description of the project, its goals, and technologies used.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Frontend Development</h3>
+                <p>Proficient in HTML, CSS, JavaScript, React, and responsive web design.</p>
+            </div>
+            <div class="skill">
+                <h3>Backend Development</h3>
+                <p>Experience with Node.js, Express, MongoDB, and API development.</p>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <p>Email: wakwaya1@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 My GitHub Portfolio</p>
+    </footer>
+
+</body>
+</html>
